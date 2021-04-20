@@ -58,8 +58,7 @@
                 
                 Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
                     
-                    if let error = error {
-                        print("DEBUG: "+error.localizedDescription)
+                    if error != nil {
                         return
                     }
                     

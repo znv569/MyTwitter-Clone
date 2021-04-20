@@ -17,6 +17,7 @@ class TweetHeader: UICollectionReusableView {
         }
     }
     
+    private var configureUIisset = false
     
     private let replyFromLabel: UILabel = {
         let label = UILabel()
@@ -209,7 +210,10 @@ class TweetHeader: UICollectionReusableView {
     
     func configureUI(){
         
-        
+        guard configureUIisset == false else{
+            configureUIisset = true
+            return
+        }
         
         addSubview(replyFromLabel)
         replyFromLabel.anchor(top: topAnchor, left: leftAnchor, right: rightAnchor, paddingTop: 4, paddingLeft: 5, paddingRight: 5)
@@ -271,7 +275,6 @@ class TweetHeader: UICollectionReusableView {
         stackButton.axis = .horizontal
         
         stackButton.distribution = .equalCentering
-        stackButton.spacing = 72
         
         addSubview(stackButton)
         stackButton.anchor(top: underLine.bottomAnchor, left: leftAnchor, right: rightAnchor, paddingTop: 12, paddingLeft: 50, paddingRight: 50, height: nil)

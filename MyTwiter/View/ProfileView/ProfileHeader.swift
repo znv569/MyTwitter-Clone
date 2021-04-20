@@ -58,8 +58,6 @@ class ProfileHeader: UICollectionReusableView{
         button.setTitleColor(.twitterBlue, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         button.addTarget(self, action: #selector(handleEditProfileFollow), for: .touchUpInside)
-        
-        
         return button
     }()
 

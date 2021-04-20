@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		045F14629C308818B2630A22 /* Pods_MyTwiter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAD1E274373DCB0710D0E8C /* Pods_MyTwiter.framework */; };
+		84010C8525D1C5300034BD6F /* MyTwiterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84010C8425D1C5300034BD6F /* MyTwiterTests.swift */; };
 		8426797825CD543D008B85F5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8426797725CD543D008B85F5 /* .gitignore */; };
 		843C9887255D259500C4F05D /* TweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C9886255D259500C4F05D /* TweetController.swift */; };
 		843C988A255D613B00C4F05D /* TweetHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C9889255D613B00C4F05D /* TweetHeader.swift */; };
@@ -68,9 +69,22 @@
 		84FA8CD625652504008A9007 /* NotificationTweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA8CD525652504008A9007 /* NotificationTweet.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		84010C8725D1C5300034BD6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84DE1533255446D100E77286 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84DE153A255446D100E77286;
+			remoteInfo = MyTwiter;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1193619C911FE3E906B75764 /* Pods-MyTwiter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTwiter.debug.xcconfig"; path = "Target Support Files/Pods-MyTwiter/Pods-MyTwiter.debug.xcconfig"; sourceTree = "<group>"; };
 		2DAD1E274373DCB0710D0E8C /* Pods_MyTwiter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTwiter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84010C8225D1C5300034BD6F /* MyTwiterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTwiterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84010C8425D1C5300034BD6F /* MyTwiterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTwiterTests.swift; sourceTree = "<group>"; };
+		84010C8625D1C5300034BD6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8426797725CD543D008B85F5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		843C9886255D259500C4F05D /* TweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetController.swift; sourceTree = "<group>"; };
 		843C9889255D613B00C4F05D /* TweetHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetHeader.swift; sourceTree = "<group>"; };
@@ -135,6 +149,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		84010C7F25D1C5300034BD6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84DE1538255446D100E77286 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,6 +175,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		84010C8325D1C5300034BD6F /* MyTwiterTests */ = {
+			isa = PBXGroup;
+			children = (
+				84010C8425D1C5300034BD6F /* MyTwiterTests.swift */,
+				84010C8625D1C5300034BD6F /* Info.plist */,
+			);
+			path = MyTwiterTests;
+			sourceTree = "<group>";
+		};
 		847BE2CA2578C8B900B504EA /* ProfileView */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +201,7 @@
 			children = (
 				8426797725CD543D008B85F5 /* .gitignore */,
 				84DE153D255446D100E77286 /* MyTwiter */,
+				84010C8325D1C5300034BD6F /* MyTwiterTests */,
 				84DE153C255446D100E77286 /* Products */,
 				DDAED275C9FBA4A201ECE320 /* Pods */,
 				1A3C896E44BA1257AEBD9079 /* Frameworks */,
@@ -181,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				84DE153B255446D100E77286 /* MyTwiter.app */,
+				84010C8225D1C5300034BD6F /* MyTwiterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -314,6 +346,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		84010C8125D1C5300034BD6F /* MyTwiterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84010C8B25D1C5300034BD6F /* Build configuration list for PBXNativeTarget "MyTwiterTests" */;
+			buildPhases = (
+				84010C7E25D1C5300034BD6F /* Sources */,
+				84010C7F25D1C5300034BD6F /* Frameworks */,
+				84010C8025D1C5300034BD6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84010C8825D1C5300034BD6F /* PBXTargetDependency */,
+			);
+			name = MyTwiterTests;
+			productName = MyTwiterTests;
+			productReference = 84010C8225D1C5300034BD6F /* MyTwiterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		84DE153A255446D100E77286 /* MyTwiter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84DE154F255446D200E77286 /* Build configuration list for PBXNativeTarget "MyTwiter" */;
@@ -339,9 +389,13 @@
 		84DE1533255446D100E77286 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1210;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
+					84010C8125D1C5300034BD6F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 84DE153A255446D100E77286;
+					};
 					84DE153A255446D100E77286 = {
 						CreatedOnToolsVersion = 12.1;
 					};
@@ -361,11 +415,19 @@
 			projectRoot = "";
 			targets = (
 				84DE153A255446D100E77286 /* MyTwiter */,
+				84010C8125D1C5300034BD6F /* MyTwiterTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		84010C8025D1C5300034BD6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84DE1539255446D100E77286 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -422,6 +484,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		84010C7E25D1C5300034BD6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84010C8525D1C5300034BD6F /* MyTwiterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84DE1537255446D100E77286 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -485,6 +555,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		84010C8825D1C5300034BD6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84DE153A255446D100E77286 /* MyTwiter */;
+			targetProxy = 84010C8725D1C5300034BD6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		84DE1549255446D200E77286 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -497,6 +575,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		84010C8925D1C5300034BD6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F7JKC8NRU;
+				INFOPLIST_FILE = MyTwiterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zaremba.MyTwiterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTwiter.app/MyTwiter";
+			};
+			name = Debug;
+		};
+		84010C8A25D1C5300034BD6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F7JKC8NRU;
+				INFOPLIST_FILE = MyTwiterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zaremba.MyTwiterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTwiter.app/MyTwiter";
+			};
+			name = Release;
+		};
 		84DE154D255446D200E77286 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -656,6 +776,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		84010C8B25D1C5300034BD6F /* Build configuration list for PBXNativeTarget "MyTwiterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84010C8925D1C5300034BD6F /* Debug */,
+				84010C8A25D1C5300034BD6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		84DE1536255446D100E77286 /* Build configuration list for PBXProject "MyTwiter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

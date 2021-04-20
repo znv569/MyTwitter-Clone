@@ -35,6 +35,7 @@ class EditProfileCell: UITableViewCell {
         let tf = UITextField()
         tf.textColor = .twitterBlue
         tf.addTarget(self, action: #selector(inputChangeText), for: .editingChanged)
+        
         return tf
     }()
     

@@ -31,6 +31,9 @@ class TweetController: UICollectionViewController {
         
     }
     
+    deinit {
+        listenerReplys?.remove()
+    }
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -83,8 +86,8 @@ class TweetController: UICollectionViewController {
         
     listenerReplys?.remove()
         
-     listenerReplys = TweetService.shared.fetchReplys(tweet: tweet) { (retweets) in
-            self.retweets = retweets
+     listenerReplys = TweetService.shared.fetchReplys(tweet: tweet) { [weak self] (retweets) in
+            self?.retweets = retweets
             
         }
         
@@ -93,7 +96,6 @@ class TweetController: UICollectionViewController {
     //MARK: Selectors
     
     @objc func handleCloseController(){
-        listenerReplys?.remove()
         navigationController?.popViewController(animated: true)
     }
     

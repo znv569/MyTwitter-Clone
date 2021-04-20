@@ -24,7 +24,7 @@ class TweetCell: UICollectionViewCell{
     }
     
 
-    
+    private var configureUIisset = false
     var numberRow: Double = 0
     
     weak var delegate: TweetCellDelegate?
@@ -185,6 +185,11 @@ class TweetCell: UICollectionViewCell{
     //MARK: - Helpers
     
     fileprivate func configureUI() {
+        guard configureUIisset == false else{
+            configureUIisset = true
+            return
+        }
+        
         backgroundColor = .white
         
         
