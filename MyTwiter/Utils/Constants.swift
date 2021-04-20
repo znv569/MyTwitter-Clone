@@ -15,6 +15,7 @@ let REF_USER_TWEETS = DB_REF.child("user-tweets")
 
 
 let db = Firestore.firestore()
+let db3 = " "
 
 let CLOUD_TWEETS = db.collection("tweets")
 let CLOUD_REPLYS = db.collection("reply")

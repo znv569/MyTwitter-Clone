@@ -22,6 +22,7 @@ class ActionSheetLauncher: NSObject {
         return  ( 60 * CGFloat(viewModel.options.count) ) + 90
     }
     
+    
     private lazy var blackScreen: UIView = {
        let view = UIView()
         view.alpha = 0

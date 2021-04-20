@@ -18,6 +18,7 @@ struct TweetService{
         "caption": caption] as [String: AnyObject]
 
         switch config {
+        
         case .tweet:
             CLOUD_TWEETS.addDocument(data: values,completion: completion)
             
