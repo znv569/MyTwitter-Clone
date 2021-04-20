@@ -10,6 +10,8 @@ struct TweetService{
         
         guard let uid = Auth.auth().currentUser?.uid else { return }
         
+          
+        
         
         var values = ["uid": uid,
                       "timestamp": Int(Date().timeIntervalSince1970),
