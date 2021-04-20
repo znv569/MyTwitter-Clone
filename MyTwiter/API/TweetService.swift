@@ -5,14 +5,11 @@ import Firebase
 struct TweetService{
     static let shared = TweetService()
     
+    //FIX
     
     func uploadTweet(caption: String, config: UploadTweetConfiguration, completion: @escaping(Error?) -> Void){
         
         guard let uid = Auth.auth().currentUser?.uid else { return }
-        
-          
-        
-        
         var values = ["uid": uid,
                       "timestamp": Int(Date().timeIntervalSince1970),
                       "likes": 0,
